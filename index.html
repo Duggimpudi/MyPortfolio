@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="Arun photo.jpg" alt="Arun Duggimpudi" class="profile-photo">
+        <h2>Hi, I'm <span class="highlight">Arun Duggimpudi</span> 👋</h2>
+        <p>Team-oriented, critical thinker with relevant skills and experience, motivated to join a group of seasoned
+            and cross-functional teammates where I anticipate growth and a chance to prove my abilities.</p>
+    </section>
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a detail-oriented professional with experience in data analysis, reporting, and e-commerce operations.
+            Through my internship, I worked with SQL, Power BI, and SSRS to extract insights and create reports. My past
+            roles have also given me hands-on experience with product data management, pricing updates, and web scraping
+            for maintaining accurate catalogs.
+
+            With a strong background in customer service, I excel at communication, problem-solving, and ensuring a
+            smooth user experience. I also have knowledge of HTML & CSS, which helps me understand website structures
+            and data presentation.
+
+            I'm eager to bring my analytical mindset and technical skills to an e-commerce team and contribute to its
+            success.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>SQL</span>
+            <span>EXCEL</span>
+            <span>SALESFORCE</span>
+            <span>WEB SCRAPPING</span>
+            <span>DATA ANALYSIS</span>
+            <span>REPORTING</span>
+            <span>CUSTOMER SERVICE</span>
+            <span>PROBLEM SOLVING</span>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <!-- Farro Fresh Experience -->
+        <div class="experience-item">
+            <h3><i class="fas fa-store"></i> Checkout Attendant at Farro Fresh (May 24 - Present)</h3>
+            <ul>
+                <li>Manage stock effectively using correct procedures such as FIFO, date-checking, and cycle counting.
+                </li>
+                <li>Capably perform Level 1 SOPs to keep store operations and stock management flowing well.</li>
+                <li>Engage with customers, warmly greeting or acknowledging every customer.</li>
+                <li>Monitor the quality of products and act if the quality does not meet the Farro standards.</li>
+            </ul>
+        </div>
+
+        <!-- MVP Studio Experience -->
+        <div class="experience-item">
+            <h3><i class="fas fa-chart-line"></i> Data Analyst Intern at MVP Studio (Oct 23 - May 24)</h3>
+            <ul>
+                <li>Extracted data from various sources, transformed and loaded into destination tables using SSIS.</li>
+                <li>Developed interactive dashboards in Power BI to effectively communicate insights.</li>
+                <li>Wrote SQL joins, views, CTEs, and stored procedures for reporting and analysis.</li>
+            </ul>
+        </div>
+
+        <!-- Efficiently Experience -->
+        <div class="experience-item">
+            <h3><i class="fas fa-database"></i> Catalogue Data Specialist at Efficiently (Dec 20 - Dec 22)</h3>
+            <ul>
+                <li>Scraped websites to collect relevant information and uploaded data into the database.</li>
+                <li>Manipulated supplier pricing data using Excel formulas and uploaded into the system.</li>
+                <li>Created visualization reports using pivot tables, charts, and graphs.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <Section id="Education">
+            <h2>Education</h2>
+            <div class="Education-item">
+                <h3>Masters in engineering - Northwestern Polytechnic University, USA</h3>
+
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <a href="javascript:void(0);" class="contact-item" onclick="showEmail()">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+
+                <p id="email-address" style="display:none; font-weight:bold;"></p>
+
+                <script>
+                    function showEmail() {
+                        document.getElementById("email-address").innerText = "arun.duggimpudi@gmail.com";
+                        document.getElementById("email-address").style.display = "block";
+                    }
+                </script>
+
+
+                <a href="https://github.com/Duggimpudi" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="javascript:void(0);" class="contact-item" onclick="showPhoneNumber()">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone</span>
+                </a>
+
+                <p id="phone-number" style="display:none; font-weight:bold;"></p>
+
+                <script>
+                    function showPhoneNumber() {
+                        document.getElementById("phone-number").innerText = "+64274744674";
+                        document.getElementById("phone-number").style.display = "block";
+                    }
+                </script>
+            </div>
+        </section>
+</body>
+
+</html>
